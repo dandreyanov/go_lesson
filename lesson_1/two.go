@@ -3,25 +3,25 @@ package lesson_1
 import "fmt"
 
 func Two() {
-	var num1, num2 int
-	fmt.Print("Введите первое число: ")
-	num1 = inputNumber()
-	fmt.Print("Введите второе число: ")
-	num2 = inputNumber()
-	switch {
-	case num1 > num2:
-		fmt.Println("Первое число больше")
-	case num2 > num1:
-		fmt.Println("Второе число больше")
-	case num1 == num2:
-		fmt.Println("Числа равны")
-	}
-	result := float32(num1+num2) / 2
-	fmt.Println("Среднее арифметическое = ", result)
-}
+	var arr [5]int
+	fmt.Println("Введите пять чисел через пробел:")
+	fmt.Scan(&arr[0], &arr[1], &arr[2], &arr[3], &arr[4])
 
-func inputNumber() int {
-	var num int
-	fmt.Scan(&num)
-	return num
+	min := arr[0]
+	max := arr[0]
+	sum := 0
+
+	for i := 0; i < 5; i++ {
+		if arr[i] < min {
+			min = arr[i]
+		}
+		if arr[i] > max {
+			max = arr[i]
+		}
+		sum += arr[i]
+	}
+
+	fmt.Println("Минимальное число:", min)
+	fmt.Println("Максимальное число:", max)
+	fmt.Println("Среднее арифметическое:", sum/5)
 }
