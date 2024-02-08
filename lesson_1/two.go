@@ -17,7 +17,7 @@ func Two() {
 		fmt.Println("Числа равны")
 	}
 	result := float32(num1+num2) / 2
-	fmt.Print("Среднее арифметическое = ", result)
+	fmt.Println("Среднее арифметическое = ", result)
 }
 
 func inputNumber() int {
