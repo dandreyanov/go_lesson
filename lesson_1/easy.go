@@ -2,7 +2,7 @@ package lesson_1
 
 import "fmt"
 
-func One() {
+func Easy() {
 	var num int
 	fmt.Print("Введите число: ")
 	fmt.Scan(&num)

@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func Three() {
+func Hard() {
 	var vertices [][]float64
 	vertices = make([][]float64, 4)
 

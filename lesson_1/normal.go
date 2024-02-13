@@ -2,7 +2,7 @@ package lesson_1
 
 import "fmt"
 
-func Two() {
+func Normal() {
 	var arr [5]int
 	fmt.Println("Введите пять чисел через пробел:")
 	fmt.Scan(&arr[0], &arr[1], &arr[2], &arr[3], &arr[4])
