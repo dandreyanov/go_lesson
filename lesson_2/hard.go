@@ -16,6 +16,12 @@ func Hard() {
 	}
 
 	fmt.Println("Список людей:", people)
+
+	findChild(people)
+
+}
+
+func findChild(people map[string]int) {
 	var underage []string
 	var err error
 
